@@ -224,6 +224,31 @@
   .card-cta p.tagline{color:var(--clay-deep);}
   .card-cta .tile-link{color:var(--ink);}
 
+  /* ---------- NEUROFEEDBACK – TEXTBLÖCKE MIT BILD ---------- */
+  .nf-block{background:var(--cream);}
+  .nf-block.alt{background:var(--white);}
+  .nf-block-grid{
+    display:grid; grid-template-columns:1fr 1fr; gap:52px; align-items:center;
+  }
+  .nf-block-grid.reverse .nf-block-image{order:2;}
+  .nf-block-image{aspect-ratio:4/3; border-radius:24px; overflow:hidden; background:var(--sage-pale);}
+  .nf-block-image img{width:100%; height:100%; object-fit:cover; display:block;}
+  .nf-block-text h2{font-weight:400; margin-bottom:.5em;}
+  .nf-block-text p{color:var(--ink-soft); font-size:1.02rem;}
+  .nf-list{list-style:none; padding:0; margin:1.2em 0 0;}
+  .nf-list li{
+    font-size:1rem; padding-left:1.7em; position:relative;
+    color:var(--ink-soft); margin-bottom:.5em;
+  }
+  .nf-list li::before{
+    content:'✓'; position:absolute; left:0; top:0; color:var(--clay);
+    font-weight:700;
+  }
+  @media (max-width:900px){
+    .nf-block-grid{grid-template-columns:1fr; gap:32px;}
+    .nf-block-grid.reverse .nf-block-image{order:0;}
+  }
+
   /* ---------- NEUROFEEDBACK-CTA (z.B. auf Leistungen-Seite) ---------- */
   .nf-cta{background:var(--white); text-align:center;}
   .nf-cta .wrap{max-width:60ch; display:flex; flex-direction:column; align-items:center;}
