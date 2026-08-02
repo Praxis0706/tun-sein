@@ -249,6 +249,41 @@
     .nf-block-grid.reverse .nf-block-image{order:0;}
   }
 
+  /* ---------- NEUROFEEDBACK – FAQ ---------- */
+  .nf-faq{background:var(--white);}
+  .nf-faq .wrap{max-width:820px;}
+  .nf-faq .sec-head{text-align:center; margin-bottom:44px;}
+  .nf-faq .sec-head .eyebrow{display:block;}
+  .nf-faq .sec-head h2{font-weight:400;}
+  .faq-list{display:flex; flex-direction:column;}
+  .faq-item{
+    border-top:1px solid rgba(61,77,34,.14);
+    padding:0;
+  }
+  .faq-item:last-child{border-bottom:1px solid rgba(61,77,34,.14);}
+  .faq-item summary{
+    cursor:pointer; list-style:none;
+    display:flex; align-items:center; gap:16px;
+    padding:24px 4px; font-family:'Fraunces',serif;
+    font-size:1.15rem; font-weight:500; color:var(--ink);
+  }
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-item summary::after{
+    content:'+'; margin-left:auto; font-size:1.5rem;
+    color:var(--clay); font-weight:400; line-height:1; flex-shrink:0;
+    transition:transform .2s ease;
+  }
+  .faq-item[open] summary::after{content:'–';}
+  .faq-answer{
+    padding:0 4px 26px; font-size:1rem;
+    color:var(--ink-soft); line-height:1.6;
+  }
+  .faq-answer p{margin:0 0 .8em;}
+  .faq-answer p:last-child{margin-bottom:0;}
+  @media (max-width:560px){
+    .faq-item summary{font-size:1.05rem;}
+  }
+
   /* ---------- NEUROFEEDBACK-CTA (z.B. auf Leistungen-Seite) ---------- */
   .nf-cta{background:var(--white); text-align:center;}
   .nf-cta .wrap{max-width:60ch; display:flex; flex-direction:column; align-items:center;}
