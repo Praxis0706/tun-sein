@@ -243,13 +243,13 @@
           <p><a href="tel:+4917671312257">(+49) 176 - 713 122 57</a><br><a href="mailto:info@tunundsein-ergotherapie.de">info@tunundsein-ergotherapie.de</a></p>
         </div>
         <div class="block">
-          <div class="label">Öffungszeiten</div>
+          <div class="label">Öffnungszeiten</div>
           <p>Mo–Fr, 8 - 18 Uhr</p>
         </div>
       </div>
       <!-- form -->
       <!--
-      <form>
+      <form id="kontaktformular">
         <div class="form-row">
           <div>
             <label for="name">Name</label>
@@ -286,9 +286,18 @@
         </div>
         
         <label class="consent">
-          <input type="checkbox" required>
+          <input id="consent" type="checkbox" name="consent" required>
           Ich stimme zu, dass meine Angaben zur Bearbeitung meiner Anfrage gespeichert werden.
         </label>
+      -->
+
+
+        <!-- Spamfalle: für Menschen unsichtbar, Bots füllen sie aus -->
+         <!--
+        <div class="hp" aria-hidden="true">
+          <label for="website">Website</label>
+          <input id="website" type="text" name="website" tabindex="-1" autocomplete="off">
+        </div>
         <button type="submit" class="btn btn-primary">Anfrage senden</button>
       </form>
       -->
@@ -329,5 +338,6 @@
   </div>
 </footer>
 
+<script src="js/form.js" defer></script>
 </body>
 </html>

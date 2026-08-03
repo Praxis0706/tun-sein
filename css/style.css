@@ -396,6 +396,14 @@
   button[type=submit]{
     justify-self:start; border:none; cursor:pointer;
   }
+  .hp{position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden;}
+
+  .form-status{
+    margin-top:14px; padding:12px 16px; border-radius:8px;
+    font-size:.9rem; line-height:1.5;
+  }
+  .form-status-success{background:var(--sage-light); color:var(--ink);}
+  .form-status-error{background:#F3DDD2; color:var(--clay-deep);}
 
   /* ---------- FOOTER ---------- */
   footer{background:var(--ink); color:var(--sage-pale); padding:64px 0 28px;}

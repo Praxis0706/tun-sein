@@ -1,5 +1,5 @@
 // Apps Script Web App URL — nach dem Deployment hier eintragen
-const FORM_ENDPOINT = "https://script.google.com/macros/s/AKfycbw5jWFdl5frr5op2mCgMuK3sAsT19WvJ_YfOeCZFfoCU-yP45s92734E09kn_PtrWavLQ/exec";
+const FORM_ENDPOINT = "https://script.google.com/macros/s/AKfycbw634gR-lPitTLmhki5w_4C7zVv4-joStDDT8jsZOToG7EhXRf32yOfMPIlrIKAv0FnyA/exec";
 
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("kontaktformular");
@@ -11,12 +11,18 @@ document.addEventListener("DOMContentLoaded", function () {
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
+    // Achtung: form.name liefert das name-Attribut des Formulars, nicht das Feld.
+    // Deshalb durchgehend über form.elements zugreifen.
+    const f = form.elements;
+
     const data = {
-      name: form.name.value.trim(),
-      email: form.email.value.trim(),
-      phone: form.phone.value.trim(),
-      thema: form.thema.value,
-      message: form.nachricht.value.trim()
+      name: f.name.value.trim(),
+      email: f.email.value.trim(),
+      phone: f.phone.value.trim(),
+      thema: f.thema.value,
+      message: f.nachricht.value.trim(),
+      consent: f.consent.checked,
+      website: f.website ? f.website.value.trim() : ""
     };
 
     submitBtn.disabled = true;
