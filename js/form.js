@@ -1,5 +1,5 @@
 // Apps Script Web App URL — nach dem Deployment hier eintragen
-const FORM_ENDPOINT = "https://script.google.com/macros/s/AKfycbw634gR-lPitTLmhki5w_4C7zVv4-joStDDT8jsZOToG7EhXRf32yOfMPIlrIKAv0FnyA/exec";
+const FORM_ENDPOINT = "https://script.google.com/macros/s/AKfycbxffvwBThuPsrbrQpy7ONeyjWmPJaG55CK6MqMs6SuScoupeasD98j-Ox8npvRmPI4E/exec";
 
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("kontaktformular");
