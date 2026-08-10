@@ -166,7 +166,7 @@
     position:relative; z-index:1;
     max-width:760px; margin:0 auto; text-align:center;
   }
-  .hero-logo{width:min(220px,55%); margin:0 auto 28px;}
+  .hero-logo{width:min(320px,100%); margin:0 auto 28px;}
   .hero p.lead{font-size:1.2rem; max-width:46ch; color:var(--ink-soft); margin-left:auto; margin-right:auto;}
   .hero-actions{display:flex; gap:16px; margin-top:34px; flex-wrap:wrap; justify-content:center;}
   .btn{
